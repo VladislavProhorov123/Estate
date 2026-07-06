@@ -5,11 +5,35 @@
   --foreground: #171717;
 }
 
+@@import "tailwindcss";
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+
+  --color-primary: #7065f0;
+  --color-primary-light: #f7f7fd;
+
+  --color-text: #000929;
+  --color-muted: #6c727f;
+
+  --color-border: #e8e6f9;
+
+  --color-background: #ffffff;
+
+  --shadow-card: 0 20px 60px rgba(15, 23, 42, 0.08);
+
+  --radius-card: 24px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +44,35 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-text);
+
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: #7065f0;
+  color: white;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-5;
 }
