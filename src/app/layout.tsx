@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     "Buy",
     "Property",
     "Luxury Homes",
+    "rent apartment"
   ],
 
   openGraph: {
