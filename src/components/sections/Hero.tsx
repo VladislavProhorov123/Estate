@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="overflow-hidden bg-[#F7F7FD]">
+    <section id="hero" className="overflow-hidden bg-[#F7F7FD]">
       <div className="container grid min-h-[calc(100vh-80px)] items-center gap-16 py-16 lg:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -75,7 +75,15 @@ export default function Hero() {
               width={700}
               height={850}
               priority
-              className="h-[650px] w-full object-cover"
+              className="h-[350px]
+    w-full
+    object-cover
+
+    sm:h-[450px]
+
+    md:h-[550px]
+
+    lg:h-[650px]"
             />
           </div>
 

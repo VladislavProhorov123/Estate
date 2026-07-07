@@ -73,6 +73,22 @@ img {
   color: white;
 }
 
+.swiper {
+  padding-bottom: 3rem;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #7065f0 !important;
+  width: 28px;
+  border-radius: 9999px;
+}
+
 .container {
   @apply mx-auto max-w-7xl px-5;
 }

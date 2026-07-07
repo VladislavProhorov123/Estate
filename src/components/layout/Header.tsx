@@ -6,6 +6,13 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { navigation } from "@/constants/navigation";
 
+const navLinks = [
+  { title: "Home", href: "#home" },
+  { title: "Properties", href: "#properties" },
+  { title: "Reviews", href: "#reviews" },
+  { title: "Contact", href: "#contact" },
+];
+
 export default function Header() {
   const [open, setOpen] = useState(false);
 
